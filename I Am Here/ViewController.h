@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import<Beaconstac/Beaconstac.h>
+#import <Google/SignIn.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<BeaconstacDelegate,GIDSignInUIDelegate>
+@property(weak, nonatomic) IBOutlet GIDSignInButton *signInButton;
+@property GIDGoogleUser *guser;
 
 @end
 

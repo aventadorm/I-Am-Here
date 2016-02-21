@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93319D61C5D6A1A00879315 /* LoggedinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93319D51C5D6A1A00879315 /* LoggedinViewController.m */; };
+		D93319D81C5D723700879315 /* QR in Resources */ = {isa = PBXBuildFile; fileRef = D93319D71C5D723700879315 /* QR */; };
+		D93319FD1C5D771C00879315 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D93319FC1C5D771C00879315 /* UIImage+MDQRCode.m */; };
+		D9331A0C1C5D772400879315 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = D93319FE1C5D772400879315 /* bitstream.c */; };
+		D9331A0D1C5D772400879315 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = D9331A001C5D772400879315 /* mask.c */; };
+		D9331A0E1C5D772400879315 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = D9331A021C5D772400879315 /* qrencode.c */; };
+		D9331A0F1C5D772400879315 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = D9331A041C5D772400879315 /* qrinput.c */; };
+		D9331A101C5D772400879315 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = D9331A061C5D772400879315 /* qrspec.c */; };
+		D9331A111C5D772400879315 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = D9331A081C5D772400879315 /* rscode.c */; };
+		D9331A121C5D772400879315 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = D9331A0A1C5D772400879315 /* split.c */; };
+		D9586ABF1C5CCF8C00179FFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9586ABE1C5CCF8C00179FFC /* GoogleService-Info.plist */; };
+		D9586AC01C5CCF8C00179FFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9586ABE1C5CCF8C00179FFC /* GoogleService-Info.plist */; };
+		D9586AC11C5CCF8C00179FFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9586ABE1C5CCF8C00179FFC /* GoogleService-Info.plist */; };
 		D9EA209E1C5C7AC10079EA06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA209D1C5C7AC10079EA06 /* main.m */; };
 		D9EA20A11C5C7AC10079EA06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA20A01C5C7AC10079EA06 /* AppDelegate.m */; };
 		D9EA20A41C5C7AC10079EA06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA20A31C5C7AC10079EA06 /* ViewController.m */; };
@@ -15,6 +28,7 @@
 		D9EA20AC1C5C7AC10079EA06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EA20AA1C5C7AC10079EA06 /* LaunchScreen.storyboard */; };
 		D9EA20B71C5C7AC10079EA06 /* I_Am_HereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA20B61C5C7AC10079EA06 /* I_Am_HereTests.m */; };
 		D9EA20C21C5C7AC10079EA06 /* I_Am_HereUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA20C11C5C7AC10079EA06 /* I_Am_HereUITests.m */; };
+		F800258E8BD4815A5D86EE97 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE94EF468616EB98BCCCFCE1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00211D6D47A207CFB19C1A38 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D93319D41C5D6A1A00879315 /* LoggedinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedinViewController.h; sourceTree = "<group>"; };
+		D93319D51C5D6A1A00879315 /* LoggedinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedinViewController.m; sourceTree = "<group>"; };
+		D93319D71C5D723700879315 /* QR */ = {isa = PBXFileReference; lastKnownFileType = folder; name = QR; path = "/Users/mayurphadte/Desktop/google-api-objectivec-client-read-only/Source/QR"; sourceTree = "<absolute>"; };
+		D93319DA1C5D731900879315 /* QR */ = {isa = PBXFileReference; lastKnownFileType = folder; name = QR; path = "../../Downloads/ios-qr-code-encoder-master/QRCode/QR"; sourceTree = "<group>"; };
+		D93319FB1C5D771C00879315 /* UIImage+MDQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MDQRCode.h"; sourceTree = "<group>"; };
+		D93319FC1C5D771C00879315 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
+		D93319FE1C5D772400879315 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		D93319FF1C5D772400879315 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		D9331A001C5D772400879315 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		D9331A011C5D772400879315 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		D9331A021C5D772400879315 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		D9331A031C5D772400879315 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		D9331A041C5D772400879315 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		D9331A051C5D772400879315 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		D9331A061C5D772400879315 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		D9331A071C5D772400879315 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		D9331A081C5D772400879315 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		D9331A091C5D772400879315 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		D9331A0A1C5D772400879315 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		D9331A0B1C5D772400879315 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		D9586ABE1C5CCF8C00179FFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D9EA20991C5C7AC10079EA06 /* I Am Here.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I Am Here.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EA209D1C5C7AC10079EA06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9EA209F1C5C7AC10079EA06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +87,8 @@
 		D9EA20BD1C5C7AC10079EA06 /* I Am HereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Am HereUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EA20C11C5C7AC10079EA06 /* I_Am_HereUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = I_Am_HereUITests.m; sourceTree = "<group>"; };
 		D9EA20C31C5C7AC10079EA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6EE6E6E7E8A95E3B12002A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FE94EF468616EB98BCCCFCE1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F800258E8BD4815A5D86EE97 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +117,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1793C5F850A98672B820C896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D93319DA1C5D731900879315 /* QR */,
+				FE94EF468616EB98BCCCFCE1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60C2DE812B39AAD15B11ED8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF6EE6E6E7E8A95E3B12002A /* Pods.debug.xcconfig */,
+				00211D6D47A207CFB19C1A38 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D9EA20901C5C7AC10079EA06 = {
 			isa = PBXGroup;
 			children = (
+				D9586ABE1C5CCF8C00179FFC /* GoogleService-Info.plist */,
 				D9EA209B1C5C7AC10079EA06 /* I Am Here */,
 				D9EA20B51C5C7AC10079EA06 /* I Am HereTests */,
 				D9EA20C01C5C7AC10079EA06 /* I Am HereUITests */,
 				D9EA209A1C5C7AC10079EA06 /* Products */,
+				60C2DE812B39AAD15B11ED8C /* Pods */,
+				1793C5F850A98672B820C896 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +161,22 @@
 		D9EA209B1C5C7AC10079EA06 /* I Am Here */ = {
 			isa = PBXGroup;
 			children = (
+				D93319FE1C5D772400879315 /* bitstream.c */,
+				D93319FF1C5D772400879315 /* bitstream.h */,
+				D9331A001C5D772400879315 /* mask.c */,
+				D9331A011C5D772400879315 /* mask.h */,
+				D9331A021C5D772400879315 /* qrencode.c */,
+				D9331A031C5D772400879315 /* qrencode.h */,
+				D9331A041C5D772400879315 /* qrinput.c */,
+				D9331A051C5D772400879315 /* qrinput.h */,
+				D9331A061C5D772400879315 /* qrspec.c */,
+				D9331A071C5D772400879315 /* qrspec.h */,
+				D9331A081C5D772400879315 /* rscode.c */,
+				D9331A091C5D772400879315 /* rscode.h */,
+				D9331A0A1C5D772400879315 /* split.c */,
+				D9331A0B1C5D772400879315 /* split.h */,
+				D93319FB1C5D771C00879315 /* UIImage+MDQRCode.h */,
+				D93319FC1C5D771C00879315 /* UIImage+MDQRCode.m */,
 				D9EA209F1C5C7AC10079EA06 /* AppDelegate.h */,
 				D9EA20A01C5C7AC10079EA06 /* AppDelegate.m */,
 				D9EA20A21C5C7AC10079EA06 /* ViewController.h */,
@@ -110,6 +186,8 @@
 				D9EA20AA1C5C7AC10079EA06 /* LaunchScreen.storyboard */,
 				D9EA20AD1C5C7AC10079EA06 /* Info.plist */,
 				D9EA209C1C5C7AC10079EA06 /* Supporting Files */,
+				D93319D41C5D6A1A00879315 /* LoggedinViewController.h */,
+				D93319D51C5D6A1A00879315 /* LoggedinViewController.m */,
 			);
 			path = "I Am Here";
 			sourceTree = "<group>";
@@ -147,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9EA20C61C5C7AC10079EA06 /* Build configuration list for PBXNativeTarget "I Am Here" */;
 			buildPhases = (
+				2954FD83BF0B54FE2AAC0E62 /* Check Pods Manifest.lock */,
 				D9EA20951C5C7AC10079EA06 /* Sources */,
 				D9EA20961C5C7AC10079EA06 /* Frameworks */,
 				D9EA20971C5C7AC10079EA06 /* Resources */,
+				0FB5261A87BE8C1621B57308 /* Embed Pods Frameworks */,
+				BB0EAEBAB2702CE745091F89 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,7 +327,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93319D81C5D723700879315 /* QR in Resources */,
 				D9EA20AC1C5C7AC10079EA06 /* LaunchScreen.storyboard in Resources */,
+				D9586ABF1C5CCF8C00179FFC /* GoogleService-Info.plist in Resources */,
 				D9EA20A91C5C7AC10079EA06 /* Assets.xcassets in Resources */,
 				D9EA20A71C5C7AC10079EA06 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9586AC01C5CCF8C00179FFC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,19 +347,77 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9586AC11C5CCF8C00179FFC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FB5261A87BE8C1621B57308 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2954FD83BF0B54FE2AAC0E62 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB0EAEBAB2702CE745091F89 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9EA20951C5C7AC10079EA06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9331A121C5D772400879315 /* split.c in Sources */,
 				D9EA20A41C5C7AC10079EA06 /* ViewController.m in Sources */,
+				D9331A0C1C5D772400879315 /* bitstream.c in Sources */,
+				D93319FD1C5D771C00879315 /* UIImage+MDQRCode.m in Sources */,
+				D9331A111C5D772400879315 /* rscode.c in Sources */,
+				D9331A101C5D772400879315 /* qrspec.c in Sources */,
 				D9EA20A11C5C7AC10079EA06 /* AppDelegate.m in Sources */,
+				D9331A0E1C5D772400879315 /* qrencode.c in Sources */,
+				D9331A0F1C5D772400879315 /* qrinput.c in Sources */,
+				D9331A0D1C5D772400879315 /* mask.c in Sources */,
 				D9EA209E1C5C7AC10079EA06 /* main.m in Sources */,
+				D93319D61C5D6A1A00879315 /* LoggedinViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,22 +554,58 @@
 		};
 		D9EA20C71C5C7AC10079EA06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6EE6E6E7E8A95E3B12002A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Beaconstac\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAppUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAuthUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+				);
 				INFOPLIST_FILE = "I Am Here/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayurphadte.I-Am-Here";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackcurrantapps.iamhere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		D9EA20C81C5C7AC10079EA06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00211D6D47A207CFB19C1A38 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Beaconstac\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAppUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAuthUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+				);
 				INFOPLIST_FILE = "I Am Here/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayurphadte.I-Am-Here";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackcurrantapps.iamhere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -499,6 +677,7 @@
 				D9EA20C81C5C7AC10079EA06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9EA20C91C5C7AC10079EA06 /* Build configuration list for PBXNativeTarget "I Am HereTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +686,7 @@
 				D9EA20CB1C5C7AC10079EA06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9EA20CC1C5C7AC10079EA06 /* Build configuration list for PBXNativeTarget "I Am HereUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +695,7 @@
 				D9EA20CE1C5C7AC10079EA06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

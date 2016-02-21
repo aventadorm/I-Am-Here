@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imageController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,82 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Roj-13-9e1" customClass="GIDSignInButton">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLt-V4-2vr">
+                                <rect key="frame" x="270" y="420" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCv-wq-ryL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FLt-V4-2vr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6oc-W2-FKL"/>
+                            <constraint firstItem="FLt-V4-2vr" firstAttribute="top" secondItem="Roj-13-9e1" secondAttribute="bottom" constant="56" id="F3U-M9-D86"/>
+                            <constraint firstItem="Roj-13-9e1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MtP-sI-8YL"/>
+                            <constraint firstItem="Roj-13-9e1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VY7-Gi-rzg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="signInButton" destination="8bC-Xf-vdC" id="Wdl-Lf-7fe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="409" y="327"/>
+        </scene>
+        <!--Loggedin View Controller-->
+        <scene sceneID="Gfe-s2-j8h">
+            <objects>
+                <viewController storyboardIdentifier="loggedInController" id="31s-JX-Lgb" customClass="LoggedinViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sib-pK-Xxc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wog-Dr-gpP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="49b-EG-f5V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hum-Wj-ui8">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONP-8D-7R0">
+                                <rect key="frame" x="270" y="503" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z7h-p8-wdM"/>
+                                    <action selector="logout:" destination="31s-JX-Lgb" eventType="touchUpInside" id="7i2-lM-Bql"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ONP-8D-7R0" firstAttribute="top" secondItem="Hum-Wj-ui8" secondAttribute="bottom" constant="53" id="B3I-h6-l1u"/>
+                            <constraint firstAttribute="width" secondItem="Hum-Wj-ui8" secondAttribute="height" multiplier="2" id="URK-SK-YUl"/>
+                            <constraint firstAttribute="width" secondItem="Hum-Wj-ui8" secondAttribute="width" multiplier="2" id="bSu-04-pK3"/>
+                            <constraint firstItem="ONP-8D-7R0" firstAttribute="centerX" secondItem="Hum-Wj-ui8" secondAttribute="centerX" id="cpg-W1-ks5"/>
+                            <constraint firstItem="Hum-Wj-ui8" firstAttribute="centerX" secondItem="49b-EG-f5V" secondAttribute="centerX" id="gpl-2G-KWM"/>
+                            <constraint firstItem="Hum-Wj-ui8" firstAttribute="centerY" secondItem="49b-EG-f5V" secondAttribute="centerY" id="mpI-sf-iji"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="qrImageView" destination="Hum-Wj-ui8" id="fdT-1r-bt0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dn-P3-C7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="322"/>
         </scene>
     </scenes>
 </document>
